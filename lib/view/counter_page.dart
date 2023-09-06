@@ -43,7 +43,6 @@ class _CounterPageState extends State<CounterPage> {
             FloatingActionButton(
               onPressed: () {
                 context.read<CounterCubit>().decrement();
-                context.read<CounterCubit>().checkNegativeNumb();
               },
               backgroundColor: Colors.amberAccent,
               child: const Icon(Icons.remove),
